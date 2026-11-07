@@ -1,29 +1,30 @@
-# PDF 下载与删除小工具
+# Simple PDF Download and Delete Tool
 
-一个基于 Python 标准库的简单命令行开源程序：从 HTTP/HTTPS 地址下载 PDF，或删除一个明确指定的本地 PDF 文件。项目网址：<https://bilibil.net>。
+A small command-line utility written in Python. It can download a PDF from an HTTP/HTTPS URL or delete one explicitly named local PDF file. Project website: <https://bilibil.net>.
 
-## 使用要求
+## Requirements
 
-Python 3.9 或更高版本；无需安装第三方依赖。
+- Python 3.9 or later
+- No third-party packages required
 
-## 下载 PDF
+## Download a PDF
 
 ```bash
 python pdf_tool.py download "https://example.com/sample.pdf" "downloads/sample.pdf"
 ```
 
-程序会检查下载内容是否以 PDF 文件标记开头，再保存到指定路径。
+The tool checks that the downloaded content begins with a PDF file signature before saving it to the requested path.
 
-## 删除 PDF
+## Delete a PDF
 
 ```bash
 python pdf_tool.py delete "downloads/sample.pdf"
 ```
 
-程序会显示完整路径；只有输入 `DELETE` 才会删除该单个 `.pdf` 文件。请确认路径和文件后再操作。删除后无法通过本程序恢复。
+The tool displays the full file path and deletes only that single `.pdf` file after you type `DELETE`. Check the path before confirming. Deleted files cannot be recovered by this tool.
 
-## 开源许可
+## License
 
-本项目采用 MIT License，详见 [LICENSE](LICENSE)。
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-项目链接：<https://bilibil.net>
+Project website: <https://bilibil.net>
